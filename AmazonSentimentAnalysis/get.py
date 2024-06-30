@@ -7,9 +7,6 @@ class GetData:
         
     def get_info(self):
         web = Web()
-        
-        # url = "https://www.amazon.in/Oneplus-Nord-Chrome-256GB-Storage/product-reviews/B0CX5BZXLF/ref=cm_cr_dp_d_show_all_btm?ie=UTF8&reviewerType=all_reviews"
-
         new_url = self.url
         review = []
         while True:

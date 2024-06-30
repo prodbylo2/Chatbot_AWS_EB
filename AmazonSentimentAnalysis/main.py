@@ -1,11 +1,9 @@
 from get import GetData
 import streamlit as st
 from PIL import Image
-
 import pandas as pd
-# import numpy as np
 import matplotlib.pyplot as plt
-# import seaborn as sns
+
 
 plt.style.use('ggplot')
 
@@ -38,7 +36,6 @@ def sentiment(data):
     
     return negative, positive, neutral
 
-# url = "https://www.amazon.in/Oneplus-Nord-Chrome-256GB-Storage/product-reviews/B0CX5BZXLF/ref=cm_cr_dp_d_show_all_btm?ie=UTF8&reviewerType=all_reviews"
 url = st.text_input('Enter some text')
 if url:
     if st.button('Should I get this?'):
